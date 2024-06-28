@@ -3,13 +3,14 @@ import random
 def main():
     total = 0
     numbers = []
-    while total<= 100:
+    while  total <= 100:
         random_num = random.randint(1, 100)
         numbers.append(random_num)
         total += random_num
-        for num in numbers[:-1]:
-            if num < 100:
-                total += random_num
+        total = total - numbers[-1]
+        
+
+                
 
     
     print(f'The random values are {numbers}')
