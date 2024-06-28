@@ -7,7 +7,10 @@ def main():
         random_num = random.randint(1, 100)
         numbers.append(random_num)
         total += random_num
-    
+        for num in numbers[:-1]:
+            if num < 100:
+                total += random_num
+
     
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
